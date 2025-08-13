@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        /* Responsive images */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: auto;
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background: #f9f9f9;
+            border-left: 5px solid #333;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+
+        /* Mobile-friendly layout */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>This is my portfolio website where I showcase my skills, projects, and testimonials.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://via.placeholder.com/200" alt="My Photo" />
+            <p>Hi, I’m [Your Name], an aspiring web developer with a passion for creating beautiful, functional websites. My strengths include [Attribute 1], [Attribute 2], and [Attribute 3].</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>Responsive Design</li>
+                <li>Basic JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">"This student is hardworking and always eager to learn!" - SYEP Coordinator</div>
+            <div class="testimonial">"A great team player with strong communication skills." - Peer</div>
+        </section>
+    </div>
+</body>
+</html>
